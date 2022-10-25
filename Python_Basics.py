@@ -125,14 +125,6 @@
 
 # year = int(input('Which year would you like to check? '))
 
-# if year % 4 == 0:
-#     print('Tis a leap')
-# if year % 100 != 0:
-#     print('Tis not')
-# if year % 400 == 0:
-#     print('Tis a leap')
-
-
 # if year % 4 == 0 and year % 100 != 0:
 #     print('leap')
 # elif year % 400 == 0:
@@ -140,22 +132,98 @@
 # else:
 #     print('not')
 
-
-
-
-
-
-
-# if expression1:
-#    statement(s)
-#    if expression2:
-#       statement(s)
-#    elif expression3:
-#       statement(s)
-#    elif expression4:
-#       statement(s)
-#    else:
-#       statement(s)
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print('leap')
+#         else:
+#             print('not')
+#     else:
+#         print('leap')
 # else:
-#    statement(s)
+#     print('not')
+
+
+# height = int(input('height in cm'))
+# bill = 0
+#
+# if height >= 120:
+#     print('you can go')
+#     age = int(input('your age?'))
+#     if age < 12 or age > 45 and 55:
+#         print('ticket 5')
+#         bill = 5
+#     elif age <= 18:
+#         print('ticket 7')
+#         bill = 7
+#     else:
+#         print('ticket 9')
+#         bill = 9
+#
+#     want_photo = input('Want Photo? Y or N')
+#     if want_photo == "Y":
+#         bill += 3
+#     print(f'Your bill is ${bill}')
+# else:
+#     print('cant ride shorty')
+
+
+# print("Welcome to Python Pizza Deliveries!")
+# size = input("What size pizza do you want? S, M, or L ")
+# add_pepperoni = input("Do you want pepperoni? Y or N ")
+# extra_cheese = input("Do you want extra cheese? Y or N ")
+# bill = 0
+#
+# if size == 'S':
+#     bill += 15
+# elif size == 'M':
+#     bill += 20
+# elif size == 'L':
+#     bill += 25
+#
+# if add_pepperoni == 'Y':
+#     if size == 'S':
+#         bill += 2
+#     elif size == 'M' or 'L':
+#         bill += 3
+# if extra_cheese == 'Y':
+#     bill += 1
+#     print(f'Your bill is ${bill}')
+# else:
+#     print('You have an error ordering your pizza')
+#
+
+# """Love Score Calculator powered by Shaggy™"""
+# print("Welcome to the Love Calculator!")
+# name1 = input("What is your name? \n").lower()
+# name2 = input("What is their name? \n").lower()
+#
+#
+# names = str(name1 + name2)
+# T = names.count('t')
+# R = names.count('r')
+# U = names.count('u')
+# E = names.count('e')
+#
+# true_some = str(T + R + U + E)
+# # print(true_some)
+#
+# L = names.count('l')
+# O = names.count('o')
+# V = names.count('v')
+# E = names.count('e')
+#
+# love_some = str(L + O + V + E)
+# # print(love_some)
+#
+# score = int(true_some[0] + love_some[0])
+# print(score)
+#
+# if score <= 10 or score >= 90:
+#     print(f"Your score is {score}, you go together like coke and mentos.")
+# elif 40 <= score <= 50:
+#     print(f"Your score is {score}, you are alright together.")
+# else:
+#     print(f'Your score is {score}')
+
 
