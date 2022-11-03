@@ -1,7 +1,18 @@
-
 """Hangman"""
 import random
 from turtle import position
+import Hangman_words
+
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
+
 
 stages = ['''
   +---+
@@ -61,8 +72,7 @@ stages = ['''
 ''']
 
 # Constants
-word_list = ["aardvark", "baboon", "camel"]
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(Hangman_words.word_list)
 word_length = len(chosen_word)
 display = []
 lives_stages = stages
@@ -71,6 +81,7 @@ game_over = False
 
 # print(f'Hey the chosen word is {chosen_word}')
 
+print(logo)
 
 for blank in range(word_length):
     display += "_"
@@ -85,6 +96,9 @@ if lives == 6:
 while not game_over:
     guess = input('Choose a letter: ').lower()
 
+    if guess in display:
+        print(f'You\'ve already guessed that letter {guess}')
+
     for position in range(word_length):
         letter = chosen_word[position]
         if letter == guess:
@@ -92,7 +106,7 @@ while not game_over:
       
     
     if guess not in chosen_word:
-        lives_left = lives_stages[lives]
+        lives_left = lives_stages[lives - 1]
         lives -= 1
         print(lives_left)
 
@@ -108,14 +122,4 @@ while not game_over:
     if "_" not in display:
         game_over = True
         print('You WON!!!')
-    
-
-
-
-
-
-
-
-
-
 
