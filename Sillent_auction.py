@@ -3,7 +3,7 @@
 bids = {}
 auction_over = False
 
-def find_highest_bidder(auction_list):
+def sillent_auction(auction_list):
     highest_bid = 0
     winner = ' '
     for highest_bidder in auction_list:
@@ -20,7 +20,7 @@ while not auction_over:
     another = input('Is there another person that would like to bid? Yes/No ')
     if another == 'No':       
         auction_over = True
-        find_highest_bidder(bids)
+        sillent_auction(bids)
     elif auction_over == "Yes":
         continue
 

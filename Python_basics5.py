@@ -1,18 +1,18 @@
-programming_dictionary = {
- "Bug": "An error in a program that prevents the program from running as expected.",
- "Function": "A piece of code that you can easily call over and over again."}
+# programming_dictionary = {
+#  "Bug": "An error in a program that prevents the program from running as expected.",
+#  "Function": "A piece of code that you can easily call over and over again."}
 
-# print(programming_dictionary["Function"])
+# # print(programming_dictionary["Function"])
 
-programming_dictionary["Loop"] = "Action of doing something over and over again"
+# programming_dictionary["Loop"] = "Action of doing something over and over again"
 
 # print(programming_dictionary)
 
-# empty_dictianory = {}
+# # empty_dictianory = {}
 
-for key in programming_dictionary:
-    print(key)  # keys
-    print(programming_dictionary[key])  # values
+# for key in programming_dictionary:
+#     print(key)  # keys
+#     print(programming_dictionary[key])  # values
 
 """Grades"""
 
