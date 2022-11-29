@@ -1,2 +1,3 @@
-# Projects
-a few project on Machine Learning
+print('hello world')
+
+a few projects, excercises and stuff
